@@ -1,18 +1,18 @@
 # Orbitant Marp Theme
 
-Marp theme based on the Orbitant Knowledge Sharing PowerPoint template.
+[Marp](https://marp.app/) theme based on the Orbitant Knowledge Sharing PowerPoint template.
 
 ## Preview
 
-| Title | Index | Content |
-|:---:|:---:|:---:|
+|               Title               |               Index               |               Content               |
+| :-------------------------------: | :-------------------------------: | :---------------------------------: |
 | ![Title slide](docs/slide-01.png) | ![Index slide](docs/slide-02.png) | ![Content slide](docs/slide-04.png) |
-| `<!-- _class: title -->` | `<!-- _class: index -->` | default |
+|     `<!-- _class: title -->`      |     `<!-- _class: index -->`      |               default               |
 
-| Accent | Light | Code |
-|:---:|:---:|:---:|
+|               Accent               |               Light               |               Code               |
+| :--------------------------------: | :-------------------------------: | :------------------------------: |
 | ![Accent slide](docs/slide-05.png) | ![Light slide](docs/slide-06.png) | ![Code slide](docs/slide-08.png) |
-| `<!-- _class: accent -->` | `<!-- _class: light -->` | default |
+|     `<!-- _class: accent -->`      |     `<!-- _class: light -->`      |             default              |
 
 ## Setup
 
@@ -39,6 +39,7 @@ paginate: true
 <!-- _class: title -->
 
 # My Presentation Title
+
 ## Speaker Name
 
 ---
@@ -65,9 +66,7 @@ Install the [Marp for VS Code](https://marketplace.visualstudio.com/items?itemNa
 
 ```json
 {
-  "markdown.marp.themes": [
-    "node_modules/@orbitant/marp-theme/orbitant.css"
-  ],
+  "markdown.marp.themes": ["node_modules/@orbitant/marp-theme/orbitant.css"],
   "markdown.marp.enableHtml": true
 }
 ```
@@ -78,17 +77,17 @@ You'll get live preview in the editor.
 
 Use `<!-- _class: classname -->` before a slide to apply a layout:
 
-| Class | Description |
-|-------|-------------|
-| `title` | Cover slide with full orbital background |
-| `section` | Chapter divider |
-| `accent` | Blue left border accent |
-| `light` | White background variant |
-| `light accent` | White background + blue left border |
-| `index` | Table of contents |
-| `cols` | Two-column grid layout |
-| `lead` | Large centered text |
-| `end` | Closing / thank you slide |
+| Class          | Description                              |
+| -------------- | ---------------------------------------- |
+| `title`        | Cover slide with full orbital background |
+| `section`      | Chapter divider                          |
+| `accent`       | Blue left border accent                  |
+| `light`        | White background variant                 |
+| `light accent` | White background + blue left border      |
+| `index`        | Table of contents                        |
+| `cols`         | Two-column grid layout                   |
+| `lead`         | Large centered text                      |
+| `end`          | Closing / thank you slide                |
 
 ## Full example
 
@@ -102,6 +101,7 @@ paginate: true
 <!-- _class: title -->
 
 # Knowledge Sharing Title
+
 ## Speaker Name
 
 ---
@@ -111,8 +111,11 @@ paginate: true
 ### Index
 
 # 01 Introduction
+
 ## 02 Architecture
+
 ## 03 Demo
+
 ## 04 Q&A
 
 ---
@@ -120,6 +123,7 @@ paginate: true
 <!-- _class: section -->
 
 # Introduction
+
 ## Context and motivation
 
 ---
@@ -127,7 +131,7 @@ paginate: true
 # Regular Content Slide
 
 - Bullet points work as expected
-- **Bold** and *italic* supported
+- **Bold** and _italic_ supported
 - Links: [example](https://example.com)
 
 ---
@@ -147,7 +151,7 @@ paginate: true
 Good for screenshots, diagrams, and tables.
 
 | Feature | Status |
-|---------|--------|
+| ------- | ------ |
 | Auth    | Done   |
 | API     | WIP    |
 
