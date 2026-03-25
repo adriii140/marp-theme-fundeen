@@ -1,0 +1,515 @@
+/* @theme orbitant */
+
+/*
+ * Orbitant Marp Theme
+ * Based on the Orbitant KS PowerPoint template
+ *
+ * Fonts: IBM Plex Sans (headings), Lexend (body)
+ * Colors: Dark background with blue (#4567ED) accents
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Lexend:wght@300;400;500;600&display=swap');
+
+/* ============================================================
+   BASE / DEFAULT SLIDE (dark background, content layout)
+   ============================================================ */
+
+section {
+  width: 1280px;
+  height: 720px;
+  padding: 60px 70px 80px 70px;
+  font-family: 'Lexend', 'Arial', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #FFFFFF;
+  background-color: #0B0F14;
+  background-image: url('./assets/bg-dark-orbit-topright.jpeg');
+  background-size: cover;
+  background-position: center;
+  letter-spacing: 0.01em;
+}
+
+/* Footer - "ORBITANT | Where Engineering Meets Business" */
+section::after {
+  content: 'ORBITANT  |  Where Engineering Meets Business';
+  position: absolute;
+  bottom: 24px;
+  left: 70px;
+  font-family: 'Lexend', sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  color: #C6C6C6;
+  letter-spacing: 0.04em;
+}
+
+/* Page number */
+section footer {
+  font-family: 'Lexend', sans-serif;
+  font-size: 11px;
+  color: #C6C6C6;
+}
+
+/* ============================================================
+   HEADINGS
+   ============================================================ */
+
+section h1 {
+  font-family: 'Lexend', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  border-bottom: none;
+}
+
+section h2 {
+  font-family: 'Lexend', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  border-bottom: none;
+}
+
+section h3 {
+  font-family: 'Lexend', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #C6C6C6;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+section h4 {
+  font-family: 'Lexend', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #C6C6C6;
+  line-height: 1.35;
+}
+
+/* ============================================================
+   BODY TEXT
+   ============================================================ */
+
+section p {
+  margin-bottom: 12px;
+}
+
+section a {
+  color: #7B9BFF;
+  text-decoration: underline;
+}
+
+section a:hover {
+  color: #A3BFFF;
+}
+
+section strong {
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+section em {
+  color: #C6C6C6;
+}
+
+/* ============================================================
+   LISTS
+   ============================================================ */
+
+section ul,
+section ol {
+  margin-left: 0.5em;
+  margin-bottom: 12px;
+}
+
+section li {
+  margin-bottom: 6px;
+}
+
+section li::marker {
+  color: #4567ED;
+}
+
+/* ============================================================
+   CODE
+   ============================================================ */
+
+section code {
+  font-family: 'IBM Plex Mono', 'Fira Code', monospace;
+  background: rgba(69, 103, 237, 0.15);
+  color: #A3BFFF;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+section pre {
+  background: rgba(11, 15, 20, 0.8);
+  border: 1px solid rgba(69, 103, 237, 0.3);
+  border-radius: 8px;
+  padding: 20px 24px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+section pre code {
+  background: transparent;
+  padding: 0;
+  color: #E0E0E0;
+}
+
+/* ============================================================
+   TABLES
+   ============================================================ */
+
+section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 20px;
+}
+
+section table th {
+  background: rgba(69, 103, 237, 0.25);
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 10px 16px;
+  text-align: left;
+  border-bottom: 2px solid #4567ED;
+}
+
+section table td {
+  padding: 10px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #E0E0E0;
+}
+
+section table tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* ============================================================
+   BLOCKQUOTE
+   ============================================================ */
+
+section blockquote {
+  border-left: 4px solid #4567ED;
+  background: rgba(69, 103, 237, 0.08);
+  padding: 16px 24px;
+  margin: 16px 0;
+  border-radius: 0 8px 8px 0;
+  color: #C6C6C6;
+  font-style: italic;
+}
+
+section blockquote strong {
+  color: #FFFFFF;
+}
+
+/* ============================================================
+   IMAGES
+   ============================================================ */
+
+section img {
+  border-radius: 8px;
+}
+
+/* ============================================================
+   HORIZONTAL RULE (used as visual separator)
+   ============================================================ */
+
+section hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, #4567ED, #00D4AA, transparent);
+  margin: 24px 0;
+}
+
+/* ============================================================
+   TITLE SLIDE (use with <!-- _class: title -->)
+   Dark background with full orbital image, centered content
+   ============================================================ */
+
+section.title {
+  background-image: url('./assets/bg-dark-orbit.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 70px 100px 70px;
+}
+
+section.title h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 56px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;
+}
+
+section.title h2 {
+  font-family: 'Lexend', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #FFFFFF;
+  opacity: 0.9;
+}
+
+section.title p {
+  font-size: 20px;
+  color: #C6C6C6;
+}
+
+/* ============================================================
+   SECTION / CHAPTER DIVIDER (use with <!-- _class: section -->)
+   Blue accent + large heading
+   ============================================================ */
+
+section.section {
+  background-image: url('./assets/bg-dark-orbit.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 70px;
+}
+
+section.section h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  line-height: 1.15;
+}
+
+section.section h2 {
+  font-family: 'Lexend', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #C6C6C6;
+}
+
+/* ============================================================
+   ACCENT SLIDE (use with <!-- _class: accent -->)
+   Blue accent bar on the left
+   ============================================================ */
+
+section.accent {
+  border-left: 6px solid #4567ED;
+  padding-left: 64px;
+}
+
+section.accent h1 {
+  color: #4567ED;
+}
+
+/* ============================================================
+   LIGHT SLIDE (use with <!-- _class: light -->)
+   White background variant
+   ============================================================ */
+
+section.light {
+  background-image: none;
+  background-color: #FFFFFF;
+  color: #212121;
+}
+
+section.light::after {
+  color: #78909C;
+}
+
+section.light h1 {
+  color: #212121;
+}
+
+section.light h2 {
+  color: #333333;
+}
+
+section.light h3,
+section.light h4 {
+  color: #555555;
+}
+
+section.light p,
+section.light li {
+  color: #333333;
+}
+
+section.light li::marker {
+  color: #4567ED;
+}
+
+section.light a {
+  color: #4567ED;
+}
+
+section.light code {
+  background: rgba(69, 103, 237, 0.1);
+  color: #4567ED;
+}
+
+section.light pre {
+  background: #F5F7FA;
+  border-color: rgba(69, 103, 237, 0.2);
+}
+
+section.light pre code {
+  color: #333333;
+}
+
+section.light table th {
+  background: rgba(69, 103, 237, 0.1);
+  color: #212121;
+  border-bottom-color: #4567ED;
+}
+
+section.light table td {
+  color: #333333;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+section.light table tr:nth-child(even) td {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+section.light blockquote {
+  background: rgba(69, 103, 237, 0.05);
+  color: #555555;
+}
+
+section.light blockquote strong {
+  color: #212121;
+}
+
+section.light hr {
+  background: linear-gradient(90deg, #4567ED, #00D4AA, transparent);
+}
+
+/* ============================================================
+   LIGHT ACCENT SLIDE (use with <!-- _class: light accent -->)
+   ============================================================ */
+
+section.light.accent {
+  border-left: 6px solid #4567ED;
+}
+
+section.light.accent h1 {
+  color: #4567ED;
+}
+
+/* ============================================================
+   INDEX / TOC SLIDE (use with <!-- _class: index -->)
+   Numbered items with highlighted current
+   ============================================================ */
+
+section.index {
+  padding: 60px 70px;
+}
+
+section.index h3 {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #C6C6C6;
+  margin-bottom: 32px;
+}
+
+section.index h1 {
+  font-family: 'Lexend', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #4567ED;
+  margin-bottom: 8px;
+}
+
+section.index h2 {
+  font-family: 'Lexend', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #C6C6C6;
+  margin-bottom: 8px;
+}
+
+/* ============================================================
+   END / THANK YOU SLIDE (use with <!-- _class: end -->)
+   ============================================================ */
+
+section.end {
+  background-image: url('./assets/bg-dark-orbit.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section.end h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+section.end p {
+  font-size: 20px;
+  color: #C6C6C6;
+}
+
+/* ============================================================
+   TWO-COLUMN LAYOUT HELPER (use with <!-- _class: cols -->)
+   ============================================================ */
+
+section.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 0 40px;
+}
+
+section.cols h1,
+section.cols h2 {
+  grid-column: 1 / -1;
+}
+
+/* ============================================================
+   LEAD SLIDE (use with <!-- _class: lead -->)
+   Large centered text for emphasis
+   ============================================================ */
+
+section.lead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section.lead h1 {
+  font-family: 'Lexend', sans-serif;
+  font-size: 52px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+section.lead p {
+  font-size: 24px;
+  color: #C6C6C6;
+  max-width: 80%;
+}

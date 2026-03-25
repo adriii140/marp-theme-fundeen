@@ -1,0 +1,30 @@
+{
+  "name": "@orbitant/marp-theme",
+  "version": "1.0.0",
+  "description": "Orbitant Marp theme for presentations",
+  "main": "orbitant.css",
+  "files": [
+    "orbitant.css"
+  ],
+  "keywords": [
+    "marp",
+    "marp-theme",
+    "orbitant",
+    "presentation",
+    "slides"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weorbitant/marp-theme-orbitant.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "marp example.md",
+    "preview": "marp --preview example.md",
+    "serve": "marp --server .",
+    "embed-assets": "node scripts/embed-assets.js"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4"
+  }
+}
