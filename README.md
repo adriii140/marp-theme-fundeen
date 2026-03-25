@@ -2,6 +2,18 @@
 
 Marp theme based on the Orbitant Knowledge Sharing PowerPoint template.
 
+## Preview
+
+| Title | Index | Content |
+|:---:|:---:|:---:|
+| ![Title slide](docs/slide-01.png) | ![Index slide](docs/slide-02.png) | ![Content slide](docs/slide-04.png) |
+| `<!-- _class: title -->` | `<!-- _class: index -->` | default |
+
+| Accent | Light | Code |
+|:---:|:---:|:---:|
+| ![Accent slide](docs/slide-05.png) | ![Light slide](docs/slide-06.png) | ![Code slide](docs/slide-08.png) |
+| `<!-- _class: accent -->` | `<!-- _class: light -->` | default |
+
 ## Setup
 
 ```bash
