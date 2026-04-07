@@ -177,7 +177,10 @@ npm run preview   # Opens example.md with live reload
 
 ### Releasing a new version
 
-Releases are triggered by git tags. Use the built-in scripts to bump the version, create a tag, and push — all in one step:
+> **Important:** Do not create tags manually with `git tag`. Use the release scripts below so that the tag is created along with a proper GitHub Release via CI/CD.
+
+1. Make sure you are on `main` with all changes committed and pushed
+2. Run the appropriate release command:
 
 ```bash
 npm run release        # patch  0.1.0 → 0.1.1
@@ -191,7 +194,11 @@ This runs `npm version` under the hood, which:
 2. Creates a commit and a `v*` tag
 3. Pushes both to the remote
 
-The push triggers the CI/CD pipeline, which validates the tag, publishes to npm, and creates a GitHub Release with auto-generated notes.
+The push triggers the [CI/CD pipeline](.github/workflows/publish.yml), which:
+
+1. Validates the tag matches `package.json`
+2. Builds and publishes to npm
+3. Creates a GitHub Release with auto-generated notes
 
 ## Fonts
 
