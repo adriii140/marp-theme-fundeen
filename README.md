@@ -164,6 +164,35 @@ Good for screenshots, diagrams, and tables.
 Questions?
 ```
 
+## Contributing
+
+### Local development
+
+```bash
+git clone https://github.com/weorbitant/marp-theme-orbitant.git
+cd marp-theme-orbitant
+npm install
+npm run preview   # Opens example.md with live reload
+```
+
+### Releasing a new version
+
+Releases are triggered by git tags. Use the built-in scripts to bump the version, create a tag, and push — all in one step:
+
+```bash
+npm run release        # patch  0.1.0 → 0.1.1
+npm run release:minor  # minor  0.1.0 → 0.2.0
+npm run release:major  # major  0.1.0 → 1.0.0
+```
+
+This runs `npm version` under the hood, which:
+
+1. Bumps the version in `package.json`
+2. Creates a commit and a `v*` tag
+3. Pushes both to the remote
+
+The push triggers the CI/CD pipeline, which validates the tag, publishes to npm, and creates a GitHub Release with auto-generated notes.
+
 ## Fonts
 
 The theme loads [Lexend](https://fonts.google.com/specimen/Lexend) and [IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans) from Google Fonts automatically. No local install needed.

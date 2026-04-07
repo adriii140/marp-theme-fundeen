@@ -2,12 +2,11 @@ name: Publish to npm
 
 on:
   push:
-    branches: [main]
-    paths:
-      - package.json
+    tags:
+      - 'v*'
 
 permissions:
-  contents: read
+  contents: write
   id-token: write
 
 jobs:
@@ -21,31 +20,29 @@ jobs:
           node-version: 20
           registry-url: https://registry.npmjs.org
 
-      - name: Check if version changed
-        id: version
+      - name: Validate tag matches package.json version
         run: |
-          LOCAL=$(node -p "require('./package.json').version")
-          PUBLISHED=$(npm view "$( node -p "require('./package.json').name" )" version 2>/dev/null || echo "0.0.0")
-          echo "local=$LOCAL" >> "$GITHUB_OUTPUT"
-          echo "published=$PUBLISHED" >> "$GITHUB_OUTPUT"
-          if [ "$LOCAL" = "$PUBLISHED" ]; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          PKG_VERSION=$(node -p "require('./package.json').version")
+          if [ "$TAG_VERSION" != "$PKG_VERSION" ]; then
+            echo "::error::Tag version ($TAG_VERSION) does not match package.json version ($PKG_VERSION)"
+            exit 1
           fi
 
       - name: Embed assets into CSS
-        if: steps.version.outputs.changed == 'true'
         run: node scripts/embed-assets.js
 
       - name: Verify build
-        if: steps.version.outputs.changed == 'true'
         run: |
           npm install
           npx marp --no-stdin --theme ./orbitant.css --html example.md --output /dev/null
 
       - name: Publish
-        if: steps.version.outputs.changed == 'true'
         run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true

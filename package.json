@@ -22,7 +22,10 @@
     "build": "marp example.md",
     "preview": "marp --preview example.md",
     "serve": "marp --server .",
-    "embed-assets": "node scripts/embed-assets.js"
+    "embed-assets": "node scripts/embed-assets.js",
+    "release": "npm version patch && git push --follow-tags",
+    "release:minor": "npm version minor && git push --follow-tags",
+    "release:major": "npm version major && git push --follow-tags"
   },
   "devDependencies": {
     "@marp-team/marp-cli": "^4"
