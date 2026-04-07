@@ -1,6 +1,6 @@
 {
   "name": "@orbitant/marp-theme",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Orbitant Marp theme for presentations",
   "main": "orbitant.css",
   "files": [
