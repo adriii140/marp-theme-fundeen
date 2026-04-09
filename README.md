@@ -20,14 +20,16 @@
 npm install @orbitant/marp-theme @marp-team/marp-cli
 ```
 
-Create a `.marprc.yml` in your project:
+Create a `.marprc.yml` in your project root so Marp can find the theme:
 
 ```yaml
-theme: node_modules/@orbitant/marp-theme/orbitant.css
+themeSet: node_modules/@orbitant/marp-theme/orbitant.css
 html: true
 ```
 
-That's it. Now any `.md` file in your project can use the theme:
+> **Important:** Without this config (or the equivalent `--theme-set` CLI flag), Marp won't find the `orbitant` theme and will fall back to the default theme — losing all backgrounds and custom styling.
+
+Now any `.md` file in your project can use the theme:
 
 ```markdown
 ---
@@ -58,6 +60,12 @@ npx marp slides.md            # HTML
 npx marp --pdf slides.md      # PDF
 npx marp --pptx slides.md     # PowerPoint
 npx marp --preview slides.md  # Open in browser with live reload
+```
+
+Alternatively, you can pass the flag directly:
+
+```bash
+npx marp --theme-set node_modules/@orbitant/marp-theme/orbitant.css --preview slides.md
 ```
 
 ## VS Code
