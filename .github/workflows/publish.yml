@@ -35,7 +35,7 @@ jobs:
       - name: Verify build
         run: |
           npm install
-          npx marp --no-stdin --theme ./orbitant.css --html example.md --output /dev/null
+          npx marp --no-stdin --theme ./fundeen.css --html example.md --output /dev/null
 
       - name: Publish
         run: npm publish --provenance --access public
