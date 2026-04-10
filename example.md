@@ -6,11 +6,9 @@ paginate: true
 
 <!-- _class: title -->
 
-# Pipeline de proyectos
+# Fundeen X Eranovum
 
-## Diversifica tu cartera este 2026.
-
-**🏢 Fundeen**
+## Proyecto de movilidad eléctrica Eranovum II
 
 ---
 
@@ -18,95 +16,151 @@ paginate: true
 
 ### Índice
 
-# 01 Por qué Fundeen
+# 01 Contexto
 
-## 02 Proyectos disponibles
+## 02 El proyecto
 
-## 03 Cómo participar
+## 03 Estrategia
 
-## 04 Preguntas frecuentes
+## 04 Plan de acción
 
 ---
 
 <!-- _class: section -->
 
-# Por qué Fundeen
+# Contexto
 
-## Coinversión responsable, accesible a cualquier persona
+## La movilidad eléctrica ya es una realidad en España
 
 ---
 
-# Sigue diversificando con Fundeen
+# La movilidad eléctrica en España
 
-En Fundeen puedes construir una cartera diversificada en transición energética con oportunidades recurrentes.
+En 2025, España registró más de 225.000 turismos electrificados vendidos, consolidando al país como uno de los líderes europeos en transición hacia la movilidad sostenible.
 
-- Diversificación real por tecnología: solar, movilidad eléctrica y soluciones climáticas
-- Rigor y trazabilidad: proyectos seleccionados y estructurados
-- Continuidad de pipeline: nuevas oportunidades de forma recurrente
+- Políticas públicas consistentes e incentivos fiscales robustos
+- Objetivos de descarbonización de la UE que aceleran la transformación
+- Programa MOVES III con recursos para infraestructura de recarga
 
 ---
 
 <!-- _class: accent -->
 
-> «Fundeen me aportó la confianza y el valor que un inversor necesita, en los buenos y en los malos momentos»
+# El cuello de botella
 
-**Pablo Gámez**, coinversor
+Madrid, Barcelona, Valencia lideran la adopción de vehículos eléctricos. Sin embargo, **la infraestructura de recarga sigue siendo insuficiente** para sostener este crecimiento.
+
+- Infraestructura como limitación real, no tecnológica
+- Necesidad de inversión privada complementaria a la pública
+- Oportunidad para modelos eficientes y ya operativos
 
 ---
 
 <!-- _class: section -->
 
-# Proyectos disponibles
+# El proyecto
 
-## Oportunidades activas en 2026
+## Una realidad operativa, no una promesa
 
 ---
 
 <!-- _class: cols -->
 
-# Proyectos en los que participar
+# ¿Qué es Eranovum II?
 
-## Argos-Nágima CO₂
+## Lo tangible
 
-Proyecto de absorción de CO2 mediante reforestación.
+304 puntos de carga en **9 comunidades autónomas**.
 
-- Inversión en **equity**
-- Importe: **527.000 €**
-- Rentabilidad: **8,0% TIR**
-- Plazo: 50 años con opciones de salida
-- Dividendos anuales
+243 ya operativos generando ingresos reales hoy.
 
-## Eranovum II — Movilidad
+Madrid (149) · Andalucía (64) · Cataluña (38)…
 
-Portfolio de 304 puntos de recarga de vehículos eléctricos.
+## Lo validado
 
-- Inversión vía **préstamo**
-- Importe: **1.450.000 €**
-- Rentabilidad: **9,25% TIR**
-- Plazo: 5 años
-- Intereses bimestrales
+Subvenciones MOVES III: **1.109.473 €**
+
+Experiencia previa exitosa en proyecto anterior.
+
+Modelo financiero validado por expertos independientes.
 
 ---
 
 <!-- _class: light -->
 
-# Características comparadas
+# Características financieras
 
-| Proyecto       | Tipo      | Importe     | Rentabilidad | Plazo   |
-|----------------|-----------|-------------|--------------|---------|
-| Argos-Nágima   | Equity    | 527.000 €   | 8,0% TIR     | 50 años |
-| Eranovum II    | Préstamo  | 1.450.000 € | 9,25% TIR    | 5 años  |
+| Concepto | Detalle |
+|---|---|
+| Tipo de inversión | Préstamo |
+| Financiación objetivo | 1.450.000 € |
+| Rentabilidad | **9,25% TIR · 46,92% ROI** |
+| Plazo | 5 años |
+| Intereses | Bimestrales |
+| Amortización | A la finalización del préstamo |
+| Garantías | Parcialmente garantizado sobre activos del proyecto |
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: section -->
 
-# La coinversión responsable accesible a cualquier persona
+# Estrategia
+
+## Enfoque narrativo, no comercial
+
+---
+
+# Enfoque estratégico
+
+Convertir el uso cotidiano del coche eléctrico en una **oportunidad de inversión natural y accesible**.
+
+- **Transición energética** como marco estructural — el cambio ya está ocurriendo
+- **Infraestructura** como activo estratégico — desfase real entre vehículos y puntos de carga
+- **Modelo operativo probado** — puntos ya operativos y generando ingresos
+- **Inversión ciudadana** — rentabilidad atractiva y democratización del acceso
+
+---
+
+<!-- _class: section -->
+
+# Plan de acción
+
+## Tres palancas de comunicación
+
+---
+
+<!-- _class: cols -->
+
+# Plan de acción
+
+## Landing del proyecto
+
+Página exclusiva con un CTA destacado, que asegura que el mensaje que el usuario vio en META o Google Ads coincida con lo que encuentra al hacer clic.
+
+Optimizada para confianza y ratio de conversión.
+
+## Email marketing
+
+Estrategia segmentada por fase del funnel de inversión.
+
+Primera fase: segmentación por **localización geográfica**, buscando inversores cerca de los puntos de recarga.
+
+---
+
+# Social media
+
+Difusión del proyecto en redes sociales con:
+
+- Video de lanzamiento **conceptual** — "El futuro no se espera. Se conduce."
+- Videos **educativos** sobre la necesidad de puntos de recarga
+- Contenido que explica cómo se generan los beneficios
+
+Objetivo: crear visibilidad, comunicar beneficios y dar seguridad al usuario para la inversión.
 
 ---
 
 <!-- _class: end -->
 
-# ¡Gracias!
+# Conduce el cambio
 
-¿Alguna duda? soporte@fundeen.com
+El futuro no se espera. Se conduce.
