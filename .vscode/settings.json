@@ -1,4 +1,4 @@
 {
-  "markdown.marp.themes": ["./orbitant.css"],
+  "markdown.marp.themes": ["./fundeen.css"],
   "markdown.marp.enableHtml": true
 }
