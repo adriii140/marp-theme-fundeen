@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Embeds asset images as base64 data URIs in orbitant.css.
+ * Embeds asset images as base64 data URIs in fundeen.css.
  * Run this before `npm publish` so the published package is self-contained.
  *
  * Usage: node scripts/embed-assets.js
@@ -10,7 +10,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const CSS_PATH = path.resolve(__dirname, '..', 'orbitant.css');
+const CSS_PATH = path.resolve(__dirname, '..', 'fundeen.css');
 
 const MIME_TYPES = {
   '.jpeg': 'image/jpeg',
