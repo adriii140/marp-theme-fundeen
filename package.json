@@ -1,21 +1,21 @@
 {
-  "name": "@orbitant/marp-theme",
+  "name": "@fundeen/marp-theme",
   "version": "0.1.0",
-  "description": "Orbitant Marp theme for presentations",
-  "main": "orbitant.css",
+  "description": "Fundeen Marp theme for presentations",
+  "main": "fundeen.css",
   "files": [
-    "orbitant.css"
+    "fundeen.css"
   ],
   "keywords": [
     "marp",
     "marp-theme",
-    "orbitant",
+    "fundeen",
     "presentation",
     "slides"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/weorbitant/marp-theme-orbitant.git"
+    "url": "https://github.com/adriii140/marp-theme-fundeen.git"
   },
   "license": "MIT",
   "scripts": {

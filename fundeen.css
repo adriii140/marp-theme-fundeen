@@ -1,0 +1,400 @@
+/* @theme fundeen */
+
+/* ============================================================
+   FUNDEEN MARP THEME
+   Basado en el branding oficial de Fundeen
+   Colores: degradado rosa-naranja-amarillo + morado oscuro
+   Tipografía: Inter (web) / Segoe UI (fallback)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* ── Variables de marca ── */
+:root {
+  /* ── Colores base (del sistema Figma de Fundeen) ── */
+  --eggplant-120:  #1A0A1C;   /* negro berenjena, máximo contraste */
+  --eggplant-100:  #2D1A2E;   /* texto principal, títulos */
+  --eggplant-80:   #4A2A4E;   /* subtítulos */
+  --eggplant-55:   #7A5580;   /* texto secundario oscuro */
+  --eggplant-40:   #C4A0C8;   /* texto secundario claro */
+
+  --orange-100:    #E8470A;   /* naranja puro del logo */
+  --orange-80:     #F06E32;   /* naranja medio */
+  --orange-70:     #F58A50;   /* naranja suave */
+
+  --pink-120:      #C41E5A;   /* rosa intenso */
+  --pink-100:      #E8387A;   /* rosa medio */
+  --pink-80:       #F06898;   /* rosa suave */
+
+  --cream-120:     #E8C832;   /* amarillo dorado */
+  --cream-100:     #F5D860;   /* amarillo medio */
+  --cream-80:      #FAE88A;   /* amarillo suave */
+  --cream-40:      #FDF5CC;   /* amarillo muy claro */
+  --cream-10:      #FFFDF0;   /* casi blanco cálido */
+
+  --gray-40:       #ACACAC;
+  --gray-25:       #D4D4D4;
+  --white:         #FFFFFF;
+
+  /* ── Alias semánticos ── */
+  --fundeen-text:       var(--eggplant-100);
+  --fundeen-text-mid:   var(--eggplant-80);
+  --fundeen-text-soft:  var(--eggplant-55);
+  --fundeen-orange:     var(--orange-80);
+  --fundeen-pink:       var(--pink-100);
+  --fundeen-white:      var(--white);
+
+  /* ── Degradados reales sacados de la web de Fundeen ── */
+  /* Coral salmón con foco naranja/amarillo — el más usado en la web */
+  --gradient-web-main:      radial-gradient(ellipse at 65% 50%, #F5C842 0%, #F07832 25%, #F0545A 60%, #F0405A 100%);
+  /* Hero portada: coral izquierda + foco amarillo-naranja derecha */
+  --gradient-hero-web:      radial-gradient(ellipse at 75% 55%, #F5D060 0%, #F08040 30%, #F05058 70%, #EE3C56 100%);
+  /* Naranja cálido tipo "Por qué Fundeen" */
+  --gradient-orange-warm:   radial-gradient(ellipse at 60% 40%, #F5D060 0%, #F0A040 40%, #F07060 80%, #F05868 100%);
+  /* Content suave para slides con texto oscuro */
+  --gradient-content:       radial-gradient(ellipse at 70% 30%, #FDE88A 0%, #F8B060 35%, #F48080 70%, #F06070 100%);
+  /* Section: el más intenso, para separadores */
+  --gradient-section-web:   radial-gradient(ellipse at 80% 45%, #F5C030 0%, #F07030 30%, #F04858 65%, #EC3050 100%);
+
+  /* ── Atajos de uso frecuente ── */
+  --gradient-hero:    var(--gradient-hero-web);
+  --gradient-warm:    var(--gradient-content);
+  --gradient-accent:  var(--gradient-web-main);
+  --gradient-end:     var(--gradient-web-main);
+  --gradient-section: var(--gradient-section-web);
+}
+
+/* ── Base ── */
+section {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-size: 28px;
+  color: var(--fundeen-text);
+  background: var(--gradient-warm);
+  padding: 60px 72px;
+  width: 1280px;
+  height: 720px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Logo Fundeen en footer (todas las slides menos title/end) */
+section::after {
+  content: '';
+  position: absolute;
+  bottom: 28px;
+  left: 72px;
+  width: 120px;
+  height: 32px;
+  background-image: url('https://www.fundeen.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffundeen-logo.webp&w=256&q=75');
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.7;
+}
+
+/* Número de página */
+section[data-marpit-pagination]::before {
+  content: attr(data-marpit-pagination);
+  position: absolute;
+  bottom: 32px;
+  right: 72px;
+  font-size: 16px;
+  color: var(--fundeen-gray);
+  font-weight: 500;
+}
+
+/* ── Tipografía ── */
+h1 {
+  font-size: 56px;
+  font-weight: 800;
+  color: var(--fundeen-text);
+  line-height: 1.1;
+  margin: 0 0 16px 0;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--fundeen-text-mid);
+  margin: 0 0 24px 0;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--fundeen-text);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 8px 0;
+}
+
+p {
+  font-size: 24px;
+  line-height: 1.6;
+  color: var(--fundeen-text);
+  margin: 0 0 16px 0;
+}
+
+ul, ol {
+  font-size: 24px;
+  line-height: 1.7;
+  color: var(--fundeen-text);
+  padding-left: 0;
+  list-style: none;
+}
+
+ul li::before {
+  content: '▸ ';
+  color: var(--fundeen-pink);
+  font-weight: 700;
+}
+
+ol {
+  counter-reset: fundeen-counter;
+}
+
+ol li {
+  counter-increment: fundeen-counter;
+}
+
+ol li::before {
+  content: counter(fundeen-counter) '. ';
+  color: var(--fundeen-orange);
+  font-weight: 700;
+}
+
+strong {
+  font-weight: 700;
+  color: var(--fundeen-text);
+}
+
+em {
+  font-style: italic;
+  color: var(--fundeen-text-mid);
+}
+
+a {
+  color: #2774E7;
+  text-decoration: underline;
+}
+
+blockquote {
+  border-left: 4px solid var(--fundeen-pink);
+  padding-left: 24px;
+  margin: 24px 0;
+  font-style: italic;
+  color: var(--fundeen-text-mid);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 20px;
+}
+
+th {
+  background: var(--fundeen-text);
+  color: var(--fundeen-white);
+  padding: 12px 20px;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(45, 26, 46, 0.15);
+  color: var(--fundeen-text);
+}
+
+tr:nth-child(even) td {
+  background: rgba(255,255,255,0.4);
+}
+
+code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85em;
+  background: rgba(45,26,46,0.08);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+pre {
+  background: var(--eggplant-120);
+  color: #f8f8f2;
+  padding: 28px;
+  border-radius: 12px;
+  font-size: 18px;
+  overflow: auto;
+}
+
+/* ============================================================
+   SLIDE CLASSES
+   ============================================================ */
+
+/* ── title: Portada principal ── */
+section.title {
+  background: var(--gradient-hero);
+  justify-content: flex-end;
+  padding-bottom: 80px;
+}
+
+section.title::after {
+  display: none;
+}
+
+section.title h1 {
+  font-size: 72px;
+  font-weight: 800;
+  color: var(--fundeen-white);
+  max-width: 70%;
+  margin-bottom: 16px;
+}
+
+section.title h2 {
+  font-size: 26px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.85);
+  max-width: 60%;
+}
+
+/* ── section: Separador de capítulo ── */
+section.section {
+  background: var(--gradient-section);
+  justify-content: center;
+}
+
+section.section::after {
+  display: none;
+}
+
+section.section h1 {
+  font-size: 64px;
+  color: var(--fundeen-white);
+  font-weight: 800;
+}
+
+section.section h2 {
+  font-size: 28px;
+  color: rgba(255,255,255,0.85);
+  font-weight: 400;
+}
+
+/* ── index: Índice / tabla de contenidos ── */
+section.index {
+  background: var(--gradient-warm);
+}
+
+section.index h3 {
+  font-size: 18px;
+  color: var(--fundeen-text-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 32px;
+}
+
+section.index h1 {
+  font-size: 40px;
+  color: var(--fundeen-text);
+  font-weight: 700;
+  border-bottom: 2px solid var(--fundeen-pink);
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+section.index h2 {
+  font-size: 30px;
+  color: var(--fundeen-text-mid);
+  font-weight: 400;
+  padding-left: 24px;
+  margin-bottom: 8px;
+}
+
+/* ── accent: Slide con acento / destacado ── */
+section.accent {
+  background: var(--fundeen-white);
+  border-left: 8px solid var(--fundeen-pink);
+}
+
+section.accent h1 {
+  color: var(--fundeen-text);
+}
+
+section.accent blockquote {
+  font-size: 26px;
+  border-left: none;
+  padding: 24px 32px;
+  background: linear-gradient(135deg, rgba(232,56,122,0.08), rgba(232,71,10,0.06));
+  border-radius: 12px;
+}
+
+/* ── light: Fondo blanco limpio ── */
+section.light {
+  background: var(--fundeen-white);
+}
+
+/* ── light accent: Blanco + borde izquierdo ── */
+section.light.accent {
+  background: var(--fundeen-white);
+  border-left: 8px solid var(--fundeen-orange);
+}
+
+/* ── cols: Dos columnas ── */
+section.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 0 48px;
+}
+
+section.cols h1 {
+  grid-column: 1 / -1;
+  font-size: 44px;
+  margin-bottom: 24px;
+}
+
+/* ── lead: Texto grande centrado ── */
+section.lead {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: var(--gradient-orange-warm);
+}
+
+section.lead h1 {
+  font-size: 80px;
+  max-width: 80%;
+  color: var(--fundeen-white);
+}
+
+section.lead p {
+  font-size: 28px;
+  color: rgba(255,255,255,0.85);
+}
+
+/* ── end: Slide de cierre ── */
+section.end {
+  background: var(--gradient-end);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+section.end::after {
+  display: none;
+}
+
+section.end h1 {
+  font-size: 96px;
+  font-weight: 800;
+  color: var(--fundeen-white);
+  margin-bottom: 24px;
+}
+
+section.end p {
+  font-size: 24px;
+  color: rgba(255,255,255,0.85);
+}

@@ -1,116 +1,112 @@
 ---
 marp: true
-theme: orbitant
+theme: fundeen
 paginate: true
 ---
 
 <!-- _class: title -->
 
-# Knowledge Sharing
-## Speaker Name
+# Pipeline de proyectos
+
+## Diversifica tu cartera este 2026.
+
+**🏢 Fundeen**
 
 ---
 
 <!-- _class: index -->
 
-### Index
+### Índice
 
-# 01 Introduction
-## 02 Architecture
-## 03 Demo
-## 04 Q&A
+# 01 Por qué Fundeen
+
+## 02 Proyectos disponibles
+
+## 03 Cómo participar
+
+## 04 Preguntas frecuentes
 
 ---
 
 <!-- _class: section -->
 
-# Introduction
-## Context and motivation
+# Por qué Fundeen
+
+## Coinversión responsable, accesible a cualquier persona
 
 ---
 
-# What is this about?
+# Sigue diversificando con Fundeen
 
-Cras fermentum magna eros, et eleifend elit interdum vestibulum. Integer est augue, finibus ut ante nec, pretium commodo eros.
+En Fundeen puedes construir una cartera diversificada en transición energética con oportunidades recurrentes.
 
-- First key point about the topic
-- Second important consideration
-- Third relevant detail
-- Final observation
+- Diversificación real por tecnología: solar, movilidad eléctrica y soluciones climáticas
+- Rigor y trazabilidad: proyectos seleccionados y estructurados
+- Continuidad de pipeline: nuevas oportunidades de forma recurrente
 
 ---
 
 <!-- _class: accent -->
 
-# Key Insight
+> «Fundeen me aportó la confianza y el valor que un inversor necesita, en los buenos y en los malos momentos»
 
-> "Engineering is about making tradeoffs with incomplete information and delivering value despite uncertainty."
-
-This is a powerful idea that drives our approach.
+**Pablo Gámez**, coinversor
 
 ---
 
-<!-- _class: light -->
+<!-- _class: section -->
 
-# Light Background Slide
+# Proyectos disponibles
 
-Sometimes a light background works better for content with diagrams or screenshots.
-
-| Feature | Status | Owner |
-|---------|--------|-------|
-| Auth    | Done   | Team A |
-| API     | WIP    | Team B |
-| UI      | Planned| Team C |
-
----
-
-<!-- _class: light accent -->
-
-# Light Accent Variant
-
-This combines the light background with the blue accent bar for emphasis.
-
-1. Step one of the process
-2. Step two with more detail
-3. Step three wrapping up
-
----
-
-# Code Example
-
-```python
-def fibonacci(n: int) -> int:
-    """Calculate the nth Fibonacci number."""
-    if n <= 1:
-        return n
-    return fibonacci(n - 1) + fibonacci(n - 2)
-```
-
-Use `fibonacci(10)` to get the 10th number.
+## Oportunidades activas en 2026
 
 ---
 
 <!-- _class: cols -->
 
-# Two Column Layout
+# Proyectos en los que participar
 
-Left column content goes here. This is useful for comparing approaches or showing side-by-side information.
+## Argos-Nágima CO₂
 
-Right column content here. You can put different content types in each column.
+Proyecto de absorción de CO2 mediante reforestación.
+
+- Inversión en **equity**
+- Importe: **527.000 €**
+- Rentabilidad: **8,0% TIR**
+- Plazo: 50 años con opciones de salida
+- Dividendos anuales
+
+## Eranovum II — Movilidad
+
+Portfolio de 304 puntos de recarga de vehículos eléctricos.
+
+- Inversión vía **préstamo**
+- Importe: **1.450.000 €**
+- Rentabilidad: **9,25% TIR**
+- Plazo: 5 años
+- Intereses bimestrales
+
+---
+
+<!-- _class: light -->
+
+# Características comparadas
+
+| Proyecto       | Tipo      | Importe     | Rentabilidad | Plazo   |
+|----------------|-----------|-------------|--------------|---------|
+| Argos-Nágima   | Equity    | 527.000 €   | 8,0% TIR     | 50 años |
+| Eranovum II    | Préstamo  | 1.450.000 € | 9,25% TIR    | 5 años  |
 
 ---
 
 <!-- _class: lead -->
 
-# Big Idea Goes Here
-
-This is a lead slide for emphasizing a single concept or statement.
+# La coinversión responsable accesible a cualquier persona
 
 ---
 
 <!-- _class: end -->
 
-# Thank You!
+# ¡Gracias!
 
-Questions?
-
+¿Alguna duda? soporte@fundeen.com
