@@ -1,6 +1,6 @@
 {
   "name": "fundeen-marp-theme",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Fundeen Marp theme for presentations",
   "main": "fundeen.css",
   "files": [
