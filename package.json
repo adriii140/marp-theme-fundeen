@@ -1,5 +1,5 @@
 {
-  "name": "@fundeen/marp-theme",
+  "name": "fundeen-marp-theme",
   "version": "0.1.3",
   "description": "Fundeen Marp theme for presentations",
   "main": "fundeen.css",
