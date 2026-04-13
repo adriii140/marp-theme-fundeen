@@ -11,57 +11,42 @@
 
 /* ── Variables de marca ── */
 :root {
-  /* ── Colores base (del sistema Figma de Fundeen) ── */
-  --eggplant-120:  #1A0A1C;   /* negro berenjena, máximo contraste */
-  --eggplant-100:  #2D1A2E;   /* texto principal, títulos */
-  --eggplant-80:   #4A2A4E;   /* subtítulos */
-  --eggplant-55:   #7A5580;   /* texto secundario oscuro */
-  --eggplant-40:   #C4A0C8;   /* texto secundario claro */
-
-  --orange-100:    #E8470A;   /* naranja puro del logo */
-  --orange-80:     #F06E32;   /* naranja medio */
-  --orange-70:     #F58A50;   /* naranja suave */
-
-  --pink-120:      #C41E5A;   /* rosa intenso */
-  --pink-100:      #E8387A;   /* rosa medio */
-  --pink-80:       #F06898;   /* rosa suave */
-
-  --cream-120:     #E8C832;   /* amarillo dorado */
-  --cream-100:     #F5D860;   /* amarillo medio */
-  --cream-80:      #FAE88A;   /* amarillo suave */
-  --cream-40:      #FDF5CC;   /* amarillo muy claro */
-  --cream-10:      #FFFDF0;   /* casi blanco cálido */
-
-  --gray-40:       #ACACAC;
-  --gray-25:       #D4D4D4;
-  --white:         #FFFFFF;
+  /* ── Colores exactos extraídos del POTX oficial de Fundeen ── */
+  --fundeen-dark:    #381B2A;   /* texto principal — morado oscuro */
+  --fundeen-dark2:   #4A2535;   /* subtítulos */
+  --fundeen-dark3:   #6A3A50;   /* texto secundario */
+  --fundeen-pink:    #FF679B;   /* rosa/fucsia */
+  --fundeen-coral:   #FF5F48;   /* coral/rojo */
+  --fundeen-orange:  #FF6D32;   /* naranja */
+  --fundeen-orange2: #FF5C2F;   /* naranja intenso */
+  --fundeen-yellow:  #FFD43C;   /* amarillo dorado */
+  --fundeen-yellow2: #FFCD3E;   /* amarillo */
+  --fundeen-white:   #FFFFFF;
 
   /* ── Alias semánticos ── */
-  --fundeen-text:       var(--eggplant-100);
-  --fundeen-text-mid:   var(--eggplant-80);
-  --fundeen-text-soft:  var(--eggplant-55);
-  --fundeen-orange:     var(--orange-80);
-  --fundeen-pink:       var(--pink-100);
-  --fundeen-white:      var(--white);
+  --fundeen-text:      var(--fundeen-dark);
+  --fundeen-text-mid:  var(--fundeen-dark2);
+  --fundeen-text-soft: var(--fundeen-dark3);
 
-  /* ── Degradados reales sacados de la web de Fundeen ── */
-  /* Coral salmón con foco naranja/amarillo — el más usado en la web */
-  --gradient-web-main:      radial-gradient(ellipse at 65% 50%, #F5C842 0%, #F07832 25%, #F0545A 60%, #F0405A 100%);
-  /* Hero portada: coral izquierda + foco amarillo-naranja derecha */
-  --gradient-hero-web:      radial-gradient(ellipse at 75% 55%, #F5D060 0%, #F08040 30%, #F05058 70%, #EE3C56 100%);
-  /* Naranja cálido tipo "Por qué Fundeen" */
-  --gradient-orange-warm:   radial-gradient(ellipse at 60% 40%, #F5D060 0%, #F0A040 40%, #F07060 80%, #F05868 100%);
-  /* Content suave para slides con texto oscuro */
-  --gradient-content:       radial-gradient(ellipse at 70% 30%, #FDE88A 0%, #F8B060 35%, #F48080 70%, #F06070 100%);
-  /* Section: el más intenso, para separadores */
-  --gradient-section-web:   radial-gradient(ellipse at 80% 45%, #F5C030 0%, #F07030 30%, #F04858 65%, #EC3050 100%);
+  /* ── Degradados basados en colores reales del POTX ── */
+  /* Portada: blanco izquierda → rosa arriba → amarillo abajo derecha */
+  --gradient-hero:    radial-gradient(ellipse at 70% 20%, #FF679B 0%, #FF8C50 40%, #FFD43C 70%, #FFF0B0 100%),
+                      radial-gradient(ellipse at 10% 80%, #FFFFFF 0%, transparent 60%);
 
-  /* ── Atajos de uso frecuente ── */
-  --gradient-hero:    var(--gradient-hero-web);
-  --gradient-warm:    var(--gradient-content);
-  --gradient-accent:  var(--gradient-web-main);
-  --gradient-end:     var(--gradient-web-main);
-  --gradient-section: var(--gradient-section-web);
+  /* Contenido: suave blanco-rosa-naranja-amarillo */
+  --gradient-warm:    radial-gradient(ellipse at 75% 25%, #FFCDE0 0%, #FFB870 40%, #FFE87A 75%, #FFFBE0 100%);
+
+  /* Sección separador: más intenso rosa-naranja */
+  --gradient-section: linear-gradient(135deg, #FF679B 0%, #FF6D32 50%, #FFD43C 100%);
+
+  /* Accent: naranja-rosa */
+  --gradient-accent:  linear-gradient(135deg, #FF5C2F 0%, #FF679B 100%);
+
+  /* Cierre: similar a portada */
+  --gradient-end:     radial-gradient(ellipse at 60% 30%, #FF679B 0%, #FF8040 35%, #FFD43C 65%, #FFF5C0 100%);
+
+  /* Naranja cálido para lead */
+  --gradient-orange-warm: linear-gradient(135deg, #FF6D32 0%, #FFD43C 100%);
 }
 
 /* ── Base ── */
